@@ -13,7 +13,7 @@ public class Tumblrconnect {
 	public static void main(String[] args)   throws InterruptedException {
 	    WebDriver driver = new FirefoxDriver();
 	      //Puts an Implicit wait, Will wait for 10 seconds before throwing exception
-	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	      
 	      //Launch website
 	      driver.navigate().to("http://socialsofttesthb.com/");
@@ -31,7 +31,7 @@ public class Tumblrconnect {
 	      
 	      //driver.findElement(By.xpath(".//*[@id='login-form']/button")).click();
 	      TestHelper.login(driver).click();
-	      //driver.findElement(By.xpath(".//*[@id='caret']")).click();
+	      driver.findElement(By.xpath(".//*[@id='myModal']/div[2]/div/div[1]/div[2]/div[1]/a[2]")).click();
 	      TestConnect.channeldropdown(driver).click();
 	       //driver.findElement(By.xpath(".//*[@id='dropdown']/div[2]"));
 	      TestConnect.SocialNetwork(driver).click();

@@ -1,8 +1,11 @@
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 import Utility.TestHelper;
 import Utility.TestConnect; 
 //facebook channel connect process//
@@ -10,6 +13,8 @@ public class channelconnect {
 	 public static void main(String[] args) throws Exception {
 		   
 	      WebDriver driver = new FirefoxDriver();
+	     // WebDriver driver = new ChromeDriver();
+	      
 	      //Puts an Implicit wait, Will wait for 10 seconds before throwing exception
 	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	      
@@ -30,7 +35,7 @@ public class channelconnect {
 	      // Click Calculate Button
 	     //driver.findElement(By.xpath(".//*[@id='login-form']/button")).click();
 	      TestHelper.login(driver).click();
-	     // driver.findElement(By.xpath(".//*[@id='caret']")).click();
+	     // driver.findElement(By.xpath(".//*[@id='myModal']/div[1]")).click();
 	      TestConnect.channeldropdown(driver).click();
 	//       driver.findElement(By.xpath(".//*[@id='dropdown']/div[2]"));
 	  //     driver.findElement(By.xpath(".//*[@id='dropdown']/div[2]/div[2]/div[2]/a")).click();

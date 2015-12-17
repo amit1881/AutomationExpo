@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 //import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 import Utility.TestHelper;
 import Utility.TestConnect;
 
@@ -28,6 +29,8 @@ public class twitterconnect {
 	      TestHelper.password(driver).sendKeys("Anuj123456");
 	     // driver.findElement(By.xpath(".//*[@id='login-form']/button")).click();
 	      TestHelper.login(driver).click();
+	      Thread.sleep(5000);
+	      driver.navigate().refresh();
 	      //driver.findElement(By.xpath(".//*[@id='caret']")).click();
 	      TestConnect.channeldropdown(driver).click();
 	       //driver.findElement(By.xpath(".//*[@id='dropdown']/div[2]"));
