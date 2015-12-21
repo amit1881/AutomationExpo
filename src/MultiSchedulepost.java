@@ -30,7 +30,7 @@ public class MultiSchedulepost {
 		     Multipublishpost.Networkfb(driver).click();
 		     Thread.sleep(5000);
 		   Multipublishpost.Scheduledpost(driver).click();
-		   Multipublishpost.Clander(driver).clear();
+		   Multipublishpost.Clander(driver).clear();  
 		   Thread.sleep(5000);
 			     for(int i=0;i<2;i++){
 			    	 Multipublishpost.Time(driver).click();
