@@ -25,7 +25,7 @@ public class Add_Project {
 		     driver.navigate().refresh();
 		     Add_Projects.ProDropDwon(driver).click();
 		     Add_Projects.AddNew(driver).click();
-		     Add_Projects.ProjectTitle(driver).sendKeys("My fist Automation project");
+		     Add_Projects.ProjectTitle(driver).sendKeys("web driver project");
 		     Add_Projects.SelectNetwork(driver).click();
 		     Thread.sleep(5000);
 		     Add_Projects.NetworkFb(driver).click();
