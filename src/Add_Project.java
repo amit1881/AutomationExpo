@@ -3,7 +3,7 @@ import java.util.concurrent.TimeUnit;
 //import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import Utility.TestHelper;
+//import Utility.TestHelper;
 import Utility.Add_Projects;
 public class Add_Project {
 
@@ -18,14 +18,15 @@ public class Add_Project {
 	      //Maximize the browser
 	      driver.manage().window().maximize();
 	      
-	      TestHelper.emailAddress(driver).sendKeys("anuj@ravabe.com");
-	      TestHelper.password(driver).sendKeys("Anuj123456");
-	      TestHelper.login(driver).click();
+	     // TestHelper.emailAddress(driver).sendKeys("anuj@ravabe.com");
+	   //   TestHelper.password(driver).sendKeys("Anuj123456");
+	     // TestHelper.login(driver).click();
+	      Login_ravabe.DoLogin(driver);
 	      Thread.sleep(5000);
 		     driver.navigate().refresh();
 		     Add_Projects.ProDropDwon(driver).click();
 		     Add_Projects.AddNew(driver).click();
-		     Add_Projects.ProjectTitle(driver).sendKeys("web driver project");
+		     Add_Projects.ProjectTitle(driver).sendKeys("new one");
 		     Add_Projects.SelectNetwork(driver).click();
 		     Thread.sleep(5000);
 		     Add_Projects.NetworkFb(driver).click();
@@ -52,6 +53,9 @@ public class Add_Project {
 		     Thread.sleep(5000);
 		     Add_Projects.ADDNetwork(driver).click();
 		     Add_Projects.AddProject(driver).click();
+		     Add_Projects.AddNewPost(driver).click();
+		     Post.StandardPost(driver);
+		     
 		     
 		     
 

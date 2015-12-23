@@ -7,38 +7,39 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
-import Utility.TestHelper;
+//import Utility.TestHelper;
 import Utility.Publishpost;
 
 
 
 public class Post {
 
-	public static void main(String[] args)   throws InterruptedException {
-	    WebDriver driver = new FirefoxDriver();
+	public static void StandardPost(WebDriver driver)   throws InterruptedException {
+	    //WebDriver driver = new FirefoxDriver();
+	    //Login_ravabe.DoLogin(driver);
 	      //Puts an Implicit wait, Will wait for 10 seconds before throwing exception
-	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    //  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	      
 	      //Launch website
-	      driver.navigate().to("http://socialsofttesthb.com/");
+	     // driver.navigate().to("http://socialsofttesthb.com/");
 	      
 	      //Maximize the browser
-	      driver.manage().window().maximize();
+	    //  driver.manage().window().maximize();
 	      
 	      // Click on Math Calculators
 	     // driver.findElement(By.xpath(".//*[@id='email']")).sendKeys("anuj@ravabe.com");
-	      TestHelper.emailAddress(driver).sendKeys("anuj@ravabe.com");
+	    // TestHelper.emailAddress(driver).sendKeys("anuj@ravabe.com");
 	      // Click on Percent Calculators
 	     // driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("Anuj123456");
-	      TestHelper.password(driver).sendKeys("Anuj123456");
+	     // TestHelper.password(driver).sendKeys("Anuj123456");
 	     // driver.findElement(By.xpath(".//*[@id='login-form']/button")).click();
-	      TestHelper.login(driver).click();
+	      //TestHelper.login(driver).click();
 	      
 	      Thread.sleep(5000);
-	     driver.navigate().refresh();
+	    // driver.navigate().refresh();
 	     
 	      //driver.findElement(By.xpath(".//*[@id='mCSB_4_container']/div/a[1]")).click();
-	      Publishpost.AddNewPost(driver).click();
+	     // Publishpost.AddNewPost(driver).click();
 	     // 
 	     // Publishpost.Standardpost(driver).click();
 	     // Thread.sleep(5000);

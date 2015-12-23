@@ -3,16 +3,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class Add_Projects {
+public class Welcomepopup {
+
 	private static WebElement element=null;
-	public static WebElement ProDropDwon(WebDriver driver)
+	public static WebElement AddNewProject(WebDriver driver)
 	{
-		 element=driver.findElement(By.xpath("html/body/div[2]/div/div/div/div[2]/div[1]"));
-		   return element;
-	}
-	public static WebElement AddNew(WebDriver driver)
-	{
-		 element=driver.findElement(By.xpath("html/body/div[2]/div/div/div/div[2]/div[2]/div[2]/a"));
+		 element=driver.findElement(By.xpath(".//*[@id='myModal']/div[2]/div/div[1]/div[2]/div[2]/a/button"));
 		   return element;
 	}
 	public static WebElement ProjectTitle(WebDriver driver)
@@ -65,7 +61,4 @@ public class Add_Projects {
 		 element=driver.findElement(By.xpath("html/body/div[3]/div/div[1]/div[1]/a"));
 		   return element;
 	}
-	
-	}
-
-
+}
