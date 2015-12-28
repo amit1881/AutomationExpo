@@ -15,7 +15,7 @@ public class AddProject {
 		WebDriver driver=new FirefoxDriver();
 		 Login_ravabe.DoLogin(driver);
 		 Welcomepopup.AddNewProject(driver).click();
-		 Welcomepopup.ProjectTitle(driver).sendKeys("new one");
+		 Welcomepopup.ProjectTitle(driver).sendKeys("New test ravabe");
 		   Welcomepopup.SelectNetwork(driver).click();
 		     Thread.sleep(5000);
 		     Welcomepopup.NetworkFb(driver).click();

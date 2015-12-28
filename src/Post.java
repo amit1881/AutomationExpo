@@ -46,12 +46,13 @@ public class Post {
 	      //driver.findElement(By.xpath(".//*[@id='heapbox_network-list-1']/a[2]")).click();
 	      Publishpost.Heapbox(driver).click();
 	     // driver.findElement(By.xpath(".//*[@id='heapbox_network-list-1']/div/ul/li[2]/a")).click();
+	      Thread.sleep(5000);
 	      Publishpost.Channel(driver).click();
 	  	
 	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	     // driver.findElement(By.xpath(".//*[@id='heapbox_channel-list-1']/a[2]")).click();
 	     // driver.findElement(By.xpath(".//*[@id='summernote-1']")).sendKeys("What does customizing products for 17 million customers look like? It's best told by the numbers and we've just updated them! Take a look and let us know which of these numbers surprises you the most.");
-	      Publishpost.Summernote(driver).sendKeys("What does customizing products for 17 million customers look like? It's best told by the numbers and we've just updated them! Take a look and let us know which of these numbers surprises you the most.");
+	      Publishpost.Summernote(driver).sendKeys("The 18th century sword from Bengal that belonged to the Najafi Dynasty, gifted to me by President Putin. .Narendra Modi. ");
 	     // driver.findElement(By.xpath(".//*[@id='show-image-1']/img")).click();
 	      Publishpost.AddImage(driver).click();
 	     //driver.findElement(By.xpath(".//*[@id='image-box-body-1']/a")).click();
@@ -65,16 +66,7 @@ public class Post {
 			e.printStackTrace();
 	      }
 	      
-	      driver.findElement(By.xpath(".//*[@id='image-box-body-1']/a")).click();
-	      
-	      try {
-	  		Runtime.getRuntime().exec("D:/autoit3/Imageuploade.exe");
-	  		Thread.sleep(5000);
-	  		} 
-	      catch (Exception e) {
-	  		// TODO Auto-generated catch block
-	  		e.printStackTrace();
-	  	}
+	
 	      
 	      //driver.findElement(By.xpath(".//*[@id='btn-publish']")).click();
 	      Publishpost.Publishnow(driver).click();

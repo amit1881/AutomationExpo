@@ -27,7 +27,7 @@ public class Multipost {
 		     driver.navigate().refresh();
 		     Publishpost.AddNewPost(driver).click();
 		     Multipublishpost.Multipost(driver).click();
-		     Multipublishpost.Summernote(driver).sendKeys(" The bridge that Howrah built for to and fro ... magnificent in its simplicity .. and its grandeur !! ");
+		     Multipublishpost.Summernote(driver).sendKeys(" MERRY CHRISTMAS:On this joyous day, and throughout the new year, may your life be filled with an abundance of love. ");
 		     Multipublishpost.Addimage(driver).click();
 		     Multipublishpost.Browse(driver).click();
 		     try {
@@ -43,10 +43,11 @@ public class Multipost {
 		     Multipublishpost.Networktwi(driver).click();
 		     Multipublishpost.Publishnow(driver).click();
 		    // Multipublishpost.Scheduledpost(driver).click();
-		    // for(int i=0;i<2;i++){
+		    // Multipublishpost.Datepicker(driver).click();
 		    	// Multipublishpost.Time(driver).click();
-		     //}
-		    // Multipublishpost.Scheduledbtn(driver).click();
+		    	// Multipublishpost.Time(driver).click();
+		    
+		     //Multipublishpost.Scheduledbtn(driver).click();
 		     Multipublishpost.Publish(driver).click();
 		     
 
