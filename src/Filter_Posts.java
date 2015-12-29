@@ -23,8 +23,15 @@ public class Filter_Posts {
 			 Thread.sleep(5000);
 			 Filter_Post.Tumblr(driver).click();
 			 Thread.sleep(5000);
-			 Filter_Post.Filter(driver).click();
+			 Filter_Post.DateFrom(driver).click();
+			 Filter_Post.DatePicker(driver).click();
+			 Thread.sleep(5000);
+			 Filter_Post.DateTo(driver).click();
+			 Filter_Post.DatePickerTo(driver).click();
 			 
+			 Filter_Post.Filter(driver).click();
+			 Thread.sleep(5000);
+			 Filter_Post.FilterClear(driver).click();
 
 }
 }

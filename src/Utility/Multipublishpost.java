@@ -56,7 +56,12 @@ public class Multipublishpost {
 	}
 	public static WebElement Clander(WebDriver driver)
 	{
-		element=driver.findElement(By.xpath(".//*[@id='multipost_form']/div/div[2]/div[2]/div[2]/div/div/div"));
+		element=driver.findElement(By.xpath(".//*[@id='multipost_form']/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[1]/table/tbody/tr[5]/td[5]"));
+		return element;
+	}
+	public static WebElement Datepicker(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath(".//*[@id='datepicker']/table/tbody/tr[5]/td[5]"));
 		return element;
 	}
 	public static WebElement Time(WebDriver driver)

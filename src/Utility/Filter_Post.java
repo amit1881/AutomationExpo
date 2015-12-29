@@ -32,9 +32,34 @@ public class Filter_Post {
 		 element=driver.findElement(By.xpath(".//*[@id='active-types']/div[2]/i"));
 		   return element;
 	}
+	public static WebElement DateFrom(WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='datefrom']"));
+		   return element;
+	}
+	public static WebElement DatePicker(WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']/table/tbody/tr[1]/td[3]/a"));
+		   return element;
+	}
+	public static WebElement DateTo(WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='dateto']"));
+		   return element;
+	}
+	public static WebElement DatePickerTo(WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']/table/tbody/tr[5]/td[3]/a"));
+		   return element;
+	}
 	public static WebElement Filter(WebDriver driver)
 	{
 		 element=driver.findElement(By.xpath(".//*[@id='btn_filter']"));
+		   return element;
+	}
+	public static WebElement FilterClear(WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='list-filter-form']/div[1]/div[3]/a"));
 		   return element;
 	}
 
