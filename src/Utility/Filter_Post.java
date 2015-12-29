@@ -7,6 +7,11 @@ import org.openqa.selenium.WebElement;
 public class Filter_Post {
 
 	private static WebElement element=null;
+	public static WebElement Types(WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='active-types']/div[2]/i"));
+		   return element;
+	}
 	public static WebElement twitter(WebDriver driver)
 	{
 		 element=driver.findElement(By.xpath(".//*[@id='active-types']/div[2]/i"));
@@ -30,6 +35,11 @@ public class Filter_Post {
 	public static WebElement Tumblr(WebDriver driver)
 	{
 		 element=driver.findElement(By.xpath(".//*[@id='active-types']/div[2]/i"));
+		   return element;
+	}
+	public static WebElement Satus(WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='active-status']/div[2]/img"));
 		   return element;
 	}
 	public static WebElement DateFrom(WebDriver driver)

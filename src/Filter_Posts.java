@@ -13,16 +13,11 @@ public class Filter_Posts {
 			 Login_ravabe.DoLogin(driver);
 			 driver.navigate().refresh();
 			 Delete_post.Publish(driver).click();
-			 Filter_Post.twitter(driver).click();
-			
-			 Filter_Post.Linkedin(driver).click();
-			
-			 Filter_Post.Youtube(driver).click();
-			 Thread.sleep(5000);
-			 Filter_Post.Wordpress(driver).click();
-			 Thread.sleep(5000);
-			 Filter_Post.Tumblr(driver).click();
-			 Thread.sleep(5000);
+			for(int i=0;i<5;i++)
+			{
+				Thread.sleep(2000);
+				Filter_Post.Types(driver).click();
+			}
 			 Filter_Post.DateFrom(driver).click();
 			 Filter_Post.DatePicker(driver).click();
 			 Thread.sleep(5000);
