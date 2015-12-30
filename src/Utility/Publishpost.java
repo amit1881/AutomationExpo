@@ -2,7 +2,6 @@ package Utility;
 
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.Select;
 
 public class Publishpost {
 
@@ -46,6 +45,11 @@ public class Publishpost {
 	public static WebElement Publishnow(WebDriver driver)
 	{
 		element=driver.findElement(By.xpath(".//*[@id='btn-publish']"));
+		return element;
+	}
+	public static WebElement Draft(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath(".//*[@id='btn-draft']"));
 		return element;
 	}
 	public static WebElement Publish(WebDriver driver)

@@ -1,6 +1,8 @@
 //import java.util.concurrent.TimeUnit;
 //import org.openqa.selenium.By;
 //import org.openqa.selenium.By;
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -10,7 +12,7 @@ public class AddProject {
 
 
 
-	public static void main(String[] args) throws InterruptedException  {
+	public static void main(String[] args) throws InterruptedException, IOException  {
 		
 		WebDriver driver=new FirefoxDriver();
 		 Login_ravabe.DoLogin(driver);
