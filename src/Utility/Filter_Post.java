@@ -37,7 +37,7 @@ public class Filter_Post {
 		 element=driver.findElement(By.xpath(".//*[@id='active-types']/div[2]/i"));
 		   return element;
 	}
-	public static WebElement Satus(WebDriver driver)
+	public static WebElement Status(WebDriver driver)
 	{
 		 element=driver.findElement(By.xpath(".//*[@id='active-status']/div[2]/img"));
 		   return element;

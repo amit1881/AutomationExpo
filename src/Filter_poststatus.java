@@ -15,7 +15,7 @@ public class Filter_poststatus {
 		 for(int i=0;i<5;i++)
 		 {
 			 Thread.sleep(5000);
-			 Filter_Post.Satus(driver).click();
+			 Filter_Post.Status(driver).click();
 		 }
 		 Filter_Post.Filter(driver).click();
 		 Thread.sleep(5000);
