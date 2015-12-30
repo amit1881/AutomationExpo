@@ -72,5 +72,18 @@ public class Filter_Post {
 		 element=driver.findElement(By.xpath(".//*[@id='list-filter-form']/div[1]/div[3]/a"));
 		   return element;
 	}
+	/*
+	 * List View and Grid View button elements
+	 */
+	//List view button element
+	public static WebElement ListViewBtn(WebDriver driver){
+		element=driver.findElement(By.xpath("html/body/div[3]/div/div[1]/div[2]/a[1]"));
+		return element;
+	}
+	//Grid view button element
+	public static WebElement GridViewBtn(WebDriver driver){
+		element=driver.findElement(By.xpath("html/body/div[3]/div/div[1]/div[2]/a[2]"));
+		return element;
+	}
 
 }
