@@ -108,12 +108,24 @@ public class Filter_Posts {
 				 Filter_Post.DatePickerTo(driver).click();
 				 break;
 			 }
+			 case "list view":{
+				 Filter_Post.ListViewBtn(driver).click();
+				 break;
+				 
+			 }
+			 case "grid":{
+				 Filter_Post.GridViewBtn(driver).click();
+				 break;
+				 
+			 }
+			 
 				 
 			 }
 			 
 			 Filter_Post.Filter(driver).click();
 			 Thread.sleep(5000);
 			 Filter_Post.FilterClear(driver).click();
+			
 
 		}
 }
