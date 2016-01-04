@@ -1,3 +1,4 @@
+package testCases;
 //import java.util.concurrent.TimeUnit;
 //import org.openqa.selenium.By;
 //import org.openqa.selenium.By;
@@ -7,7 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 //import Utility.Add_Projects;
-import Utility.Welcomepopup;
+
+import utility.Welcomepopup;
 public class AddProject {
 
 

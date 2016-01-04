@@ -1,11 +1,13 @@
+package testCases;
 import java.util.concurrent.TimeUnit;
+
 
 //import org.apache.xpath.operations.String;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import Utility.TestHelper;
+import utility.TestHelper;
 
 
 public class Login {

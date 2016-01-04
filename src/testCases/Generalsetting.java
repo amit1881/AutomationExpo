@@ -1,11 +1,13 @@
+package testCases;
 import java.util.concurrent.TimeUnit;
+
 //import org.openqa.selenium.By;
 //import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import Utility.Generalpage;
-import Utility.TestHelper;
+import utility.Generalpage;
+import utility.TestHelper;
 public class Generalsetting {
 	public static void main(String[] args)   throws InterruptedException {
 	    WebDriver driver = new FirefoxDriver();

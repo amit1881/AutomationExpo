@@ -1,13 +1,15 @@
+package testCases;
 import java.util.concurrent.TimeUnit;
+
 //import org.openqa.selenium.By;
 //import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import Utility.TestHelper;
-import Utility.Multipublishpost;
-import Utility.Publishpost;
 
-public class Multipost {
+import utility.Multipublishpost;
+import utility.Publishpost;
+import utility.TestHelper;
+public class MultiSchedulepost {
 
 	public static void main(String[] args)   throws InterruptedException {
 	    WebDriver driver = new FirefoxDriver();
@@ -27,30 +29,17 @@ public class Multipost {
 		     driver.navigate().refresh();
 		     Publishpost.AddNewPost(driver).click();
 		     Multipublishpost.Multipost(driver).click();
-		     Multipublishpost.Summernote(driver).sendKeys(" MERRY CHRISTMAS:On this joyous day, and throughout the new year, may your life be filled with an abundance of love. ");
-		     Multipublishpost.Addimage(driver).click();
-		     Multipublishpost.Browse(driver).click();
-		     try {
-					Runtime.getRuntime().exec("D:/autoit3/Imageuploade.exe");
-					Thread.sleep(5000);
-			      } 
-			      catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-			      }
+		     Multipublishpost.Summernote(driver).sendKeys(" The bridge that Howrah built for to and fro ... magnificent in its simplicity .. and its grandeur !! ");
 		     Multipublishpost.Networkfb(driver).click();
 		     Thread.sleep(5000);
-		     Multipublishpost.Networktwi(driver).click();
-		     Multipublishpost.Publishnow(driver).click();
-		    // Multipublishpost.Scheduledpost(driver).click();
-		    // Multipublishpost.Datepicker(driver).click();
-		    	// Multipublishpost.Time(driver).click();
-		    	// Multipublishpost.Time(driver).click();
-		    
-		     //Multipublishpost.Scheduledbtn(driver).click();
-		     Multipublishpost.Publish(driver).click();
-		     
+		   Multipublishpost.Scheduledpost(driver).click();
+		   Multipublishpost.Clander(driver).click();
+		  // Multipublishpost.Datepicker(driver).click();
+		   Thread.sleep(5000);
+			   //  for(int i=0;i<2;i++){
+			    	// Multipublishpost.Time(driver).click();
+			    // }
+			     Multipublishpost.Scheduledbtn(driver).click();
 
-	}
-
+}
 }
