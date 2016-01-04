@@ -1,3 +1,4 @@
+package testCases;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -5,8 +6,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
-import Utility.TestHelper;
-import Utility.TestConnect; 
+
+import utility.TestConnect;
+import utility.TestHelper;
 //facebook channel connect process//
 public class channelconnect {
 	 public static void main(String[] args) throws Exception {

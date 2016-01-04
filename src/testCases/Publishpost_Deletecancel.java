@@ -1,7 +1,8 @@
+package testCases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import Utility.Delete_post;
+import utility.Delete_post;
 public class Publishpost_Deletecancel {
 public static void main(String[] args) throws InterruptedException  {
 		

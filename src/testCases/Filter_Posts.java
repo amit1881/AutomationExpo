@@ -1,10 +1,13 @@
+package testCases;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import Utility.Delete_post;
-import Utility.Filter_Post;
+
+import utility.Delete_post;
+import utility.Filter_Post;
 
 
 public class Filter_Posts {

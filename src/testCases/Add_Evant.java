@@ -1,7 +1,8 @@
+package testCases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import Utility.ADD_Events;
+import utility.ADD_Events;
 public class Add_Evant {
 
 	public static void main(String[] args) {
