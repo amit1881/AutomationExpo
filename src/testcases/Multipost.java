@@ -1,4 +1,4 @@
-package testCases;
+package testcases;
 import java.util.concurrent.TimeUnit;
 
 //import org.openqa.selenium.By;
@@ -6,9 +6,12 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import utility.Generalpage;
+import utility.Multipublishpost;
+import utility.Publishpost;
 import utility.TestHelper;
-public class Generalsetting {
+
+public class Multipost {
+
 	public static void main(String[] args)   throws InterruptedException {
 	    WebDriver driver = new FirefoxDriver();
 	      //Puts an Implicit wait, Will wait for 10 seconds before throwing exception
@@ -25,27 +28,32 @@ public class Generalsetting {
 	      TestHelper.login(driver).click();
 	      Thread.sleep(5000);
 		     driver.navigate().refresh();
-		     Generalpage.DropDwon(driver).click();
-		     Generalpage.generalsetting(driver).click();
-		     Generalpage.Firstname(driver).clear();
-		     Thread.sleep(5000);
-		     Generalpage.Firstname(driver).sendKeys("Anuj");
-		     Generalpage.Lastname(driver).clear();
-		     Thread.sleep(5000);
-		     Generalpage.Lastname(driver).sendKeys("Chauhan");
-		     Generalpage.Browserbtn(driver).click();
-		       try {
+		     Publishpost.AddNewPost(driver).click();
+		     Multipublishpost.Multipost(driver).click();
+		     Multipublishpost.Summernote(driver).sendKeys(" MERRY CHRISTMAS:On this joyous day, and throughout the new year, may your life be filled with an abundance of love. ");
+		     Multipublishpost.Addimage(driver).click();
+		     Multipublishpost.Browse(driver).click();
+		     try {
 					Runtime.getRuntime().exec("D:/autoit3/Imageuploade.exe");
 					Thread.sleep(5000);
-			     } 
+			      } 
 			      catch (Exception e) {
-					//TODO Auto-generated catch block
+					// TODO Auto-generated catch block
 					e.printStackTrace();
 			      }
-		       Generalpage.Job(driver).sendKeys("Software engineer");
-		       Generalpage.Organisation(driver).clear();
-			     Thread.sleep(5000);
-		       Generalpage.Organisation(driver).sendKeys("ravabe");
-		       Generalpage.Updatebtn(driver).click();
-}
+		     Multipublishpost.Networkfb(driver).click();
+		     Thread.sleep(5000);
+		     Multipublishpost.Networktwi(driver).click();
+		     Multipublishpost.Publishnow(driver).click();
+		    // Multipublishpost.Scheduledpost(driver).click();
+		    // Multipublishpost.Datepicker(driver).click();
+		    	// Multipublishpost.Time(driver).click();
+		    	// Multipublishpost.Time(driver).click();
+		    
+		     //Multipublishpost.Scheduledbtn(driver).click();
+		     Multipublishpost.Publish(driver).click();
+		     
+
+	}
+
 }
