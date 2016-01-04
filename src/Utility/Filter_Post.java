@@ -7,6 +7,11 @@ import org.openqa.selenium.WebElement;
 public class Filter_Post {
 
 	private static WebElement element=null;
+	public static WebElement Types(WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='active-types']/div[2]/i"));
+		   return element;
+	}
 	public static WebElement twitter(WebDriver driver)
 	{
 		 element=driver.findElement(By.xpath(".//*[@id='active-types']/div[2]/i"));
@@ -30,6 +35,11 @@ public class Filter_Post {
 	public static WebElement Tumblr(WebDriver driver)
 	{
 		 element=driver.findElement(By.xpath(".//*[@id='active-types']/div[2]/i"));
+		   return element;
+	}
+	public static WebElement Status(WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='active-status']/div[2]/img"));
 		   return element;
 	}
 	public static WebElement DateFrom(WebDriver driver)
@@ -61,6 +71,19 @@ public class Filter_Post {
 	{
 		 element=driver.findElement(By.xpath(".//*[@id='list-filter-form']/div[1]/div[3]/a"));
 		   return element;
+	}
+	/*
+	 * List View and Grid View button elements
+	 */
+	//List view button element
+	public static WebElement ListViewBtn(WebDriver driver){
+		element=driver.findElement(By.xpath("html/body/div[3]/div/div[1]/div[2]/a[1]"));
+		return element;
+	}
+	//Grid view button element
+	public static WebElement GridViewBtn(WebDriver driver){
+		element=driver.findElement(By.xpath("html/body/div[3]/div/div[1]/div[2]/a[2]"));
+		return element;
 	}
 
 }

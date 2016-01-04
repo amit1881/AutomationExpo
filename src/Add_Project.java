@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 //import org.openqa.selenium.By;
 //import org.openqa.selenium.By;
@@ -7,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import Utility.Add_Projects;
 public class Add_Project {
 
-	public static void main(String[] args)   throws InterruptedException {
+	public static void main(String[] args)   throws InterruptedException, IOException {
 	    WebDriver driver = new FirefoxDriver();
 	      //Puts an Implicit wait, Will wait for 10 seconds before throwing exception
 	      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
