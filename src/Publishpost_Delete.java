@@ -28,6 +28,7 @@ public class Publishpost_Delete {
 			 Delete_post.Ok(driver).click(); 
 			 break;
 		 }
+		 
 		 case "cancel":{
 			 Thread.sleep(5000);
 			 Delete_post.cancel(driver).click();
