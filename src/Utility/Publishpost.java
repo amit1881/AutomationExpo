@@ -47,6 +47,21 @@ public class Publishpost {
 		element=driver.findElement(By.xpath(".//*[@id='btn-publish']"));
 		return element;
 	}
+	public static WebElement SchedPubDateBtn(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath("html/body/div[3]/div[2]/div[2]/div/div[1]/div/span[2]"));
+		return element;
+	}
+	public static WebElement DatePicker(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath(".//*[@id='datepicker']"));
+		return element;
+	}
+	public static WebElement ScheduleBtn(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath(".//*[@id='btn-schedule']"));
+		return element;
+	}
 	public static WebElement Draft(WebDriver driver)
 	{
 		element=driver.findElement(By.xpath(".//*[@id='btn-draft']"));
@@ -57,6 +72,6 @@ public class Publishpost {
 		element=driver.findElement(By.xpath("html/body/div[2]/div/div/div/div[3]/div/div[1]/div/div[2]/a"));
 		return element;
 	}
-	}
+}
 
 

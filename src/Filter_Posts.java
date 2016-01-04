@@ -113,7 +113,7 @@ public class Filter_Posts {
 				 break;
 				 
 			 }
-			 case "grid":{
+			 case "grid view":{
 				 Filter_Post.GridViewBtn(driver).click();
 				 break;
 				 
@@ -121,6 +121,7 @@ public class Filter_Posts {
 			 
 				 
 			 }
+			 
 			 
 			 Filter_Post.Filter(driver).click();
 			 Thread.sleep(5000);
