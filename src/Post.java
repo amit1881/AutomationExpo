@@ -43,7 +43,7 @@ public class Post {
 	      BufferedReader br = new BufferedReader(input);
 	      System.out.print("Enter your Post choice::");
 			 String choice=br.readLine();
-			 switch(choice){
+			 switch(choice.toLowerCase()){
 			 case "publish now":{
 				 Publishpost.Publishnow(driver).click();
 				 Publishpost.Publish(driver).click();
@@ -66,6 +66,9 @@ public class Post {
 				 Publishpost.SchedPubDateBtn(driver).click();
 				 Publishpost.Draft(driver).click();
 				 break;
+			 }
+			 default:{
+				 System.out.println("Invalid choice");
 			 }
 			 
 			 
