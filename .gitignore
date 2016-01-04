@@ -1,4 +1,4 @@
-*.class
+bin/Filter_Posts.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

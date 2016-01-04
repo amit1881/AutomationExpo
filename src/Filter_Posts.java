@@ -22,7 +22,7 @@ public class Filter_Posts {
 			 BufferedReader br=new BufferedReader(input);
 			 System.out.print("Enter your filter choice::");
 			 String choice=br.readLine();
-			 switch(choice){
+			 switch(choice.toLowerCase()){
 			 case "type":{
 			 
 				 for(int i=0;i<5;i++)
@@ -118,15 +118,27 @@ public class Filter_Posts {
 				 break;
 				 
 			 }
-			 
+			 case "date added":{
+				 Filter_Post.SelectSortdd(driver).click();
+				 Filter_Post.DateAdded(driver).click();
+				 break;
+			 }
+			 case "schedule date":{
+				 Filter_Post.SelectSortdd(driver).click();
+				 Filter_Post.ScheduleDate(driver).click();
+				 break;
+			 }
+			 default:{
+				 System.out.println("Invalid choice");
+			 }
 				 
 			 }
 			 
-			 
+			 if(choice.equals("type")||choice.equals("status")||choice.equals("date")||choice.equals("type with status")||choice.equals("type with date")||choice.equals("status with date")||choice.equals("type with status and date")){
 			 Filter_Post.Filter(driver).click();
 			 Thread.sleep(5000);
 			 Filter_Post.FilterClear(driver).click();
-			
+			 }
 
 		}
 }

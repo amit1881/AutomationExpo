@@ -85,5 +85,24 @@ public class Filter_Post {
 		element=driver.findElement(By.xpath("html/body/div[3]/div/div[1]/div[2]/a[2]"));
 		return element;
 	}
+	/*
+	 * sort posts by elements
+	 */
+	//Select dropdown
+	public static WebElement SelectSortdd(WebDriver driver){
+		element=driver.findElement(By.xpath(".//*[@id='heapbox_select-sort-by']/a[1]"));
+		return element;
+	}
+	//Date added
+	public static WebElement DateAdded(WebDriver driver){
+		element=driver.findElement(By.xpath(".//*[@id='heapbox_select-sort-by']/div/ul/li[2]/a"));
+		return element;
+	}
+	//Schedule date
+	public static WebElement ScheduleDate(WebDriver driver){
+		element=driver.findElement(By.xpath(".//*[@id='heapbox_select-sort-by']/div/ul/li[3]/a"));
+		return element;
+	}
+	
 
 }
