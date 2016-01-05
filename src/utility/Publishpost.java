@@ -72,6 +72,11 @@ public class Publishpost {
 		element=driver.findElement(By.xpath("html/body/div[2]/div/div/div/div[3]/div/div[1]/div/div[2]/a"));
 		return element;
 	}
+	public static WebElement CancelBtn(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath("html/body/div[3]/div[2]/div[2]/div/div[3]/div/a"));
+		return element;
+	}
 }
 
 

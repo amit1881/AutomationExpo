@@ -2,9 +2,11 @@ package testcases;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.WebElement;
 
 import utility.Delete_post;
 import utility.Filter_Post;
@@ -129,6 +131,14 @@ public class Filter_Posts {
 			 case "schedule date":{
 				 Filter_Post.SelectSortdd(driver).click();
 				 Filter_Post.ScheduleDate(driver).click();
+				 break;
+			 }
+			 case "find sorting types":{
+				 List<WebElement> sortlinks=Filter_Post.SelectSortTypes(driver);
+				 System.out.println(sortlinks.size());
+				 for(WebElement link :sortlinks){
+					System.out.println(link.getAttribute("title")); 
+				 }
 				 break;
 			 }
 			 default:{

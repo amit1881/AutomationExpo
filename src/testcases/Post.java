@@ -67,6 +67,10 @@ public class Post {
 				 Publishpost.Draft(driver).click();
 				 break;
 			 }
+			 case "cancel":{
+				 Publishpost.CancelBtn(driver).click();
+				 break;
+			 }
 			 default:{
 				 System.out.println("Invalid choice");
 			 }

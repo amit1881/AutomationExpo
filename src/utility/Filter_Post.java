@@ -1,5 +1,7 @@
 package utility;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +9,7 @@ import org.openqa.selenium.WebElement;
 public class Filter_Post {
 
 	private static WebElement element=null;
+	private static List<WebElement> elements=null;
 	public static WebElement Types(WebDriver driver)
 	{
 		 element=driver.findElement(By.xpath(".//*[@id='active-types']/div[2]/i"));
@@ -103,6 +106,9 @@ public class Filter_Post {
 		element=driver.findElement(By.xpath(".//*[@id='heapbox_select-sort-by']/div/ul/li[3]/a"));
 		return element;
 	}
-	
+	public static List<WebElement> SelectSortTypes(WebDriver driver){
+		elements=driver.findElements(By.cssSelector("li.heapOption>a"));
+		return elements;
+	}
 
 }
