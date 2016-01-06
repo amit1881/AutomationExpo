@@ -41,6 +41,16 @@ public class ADD_Events {
 		 element=driver.findElement(By.xpath(".//*[@id='submit-event']"));
 		   return element;
 	}
-
+	
+	public static WebElement edit (WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='event-container-fix']/div/div[2]/div[3]/div[5]/div[1]"));
+		   return element;
+	}
+	public static WebElement Editeventbtn (WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='edit-event-link']"));
+		   return element;
+	}
 	
 }

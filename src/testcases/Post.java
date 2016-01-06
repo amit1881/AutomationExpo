@@ -24,25 +24,51 @@ public class Post {
 	      Thread.sleep(5000);
 	      Publishpost.Channel(driver).click();
 	  	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	      Publishpost.Summernote(driver).sendKeys("The 18th century sword from Bengal that belonged to the Najafi Dynasty, gifted to me by President Putin. .Narendra Modi. ");
+	      Publishpost.Summernote(driver).sendKeys("As the year 2016 begins, my greetings & good wishes to everyone. May 2016 bring joy, peace, prosperity & good health in everyone's lives. ");
 	      /*
 	       * Add image with content
 	       */
-	      /*
 	      Publishpost.AddImage(driver).click();
-	      Publishpost.Browse(driver).click();
-	      try {
-			Runtime.getRuntime().exec("D:/Autoit/imageupload.exe");
-			Thread.sleep(5000);
-	      } 
-	      catch (Exception e) {
-			e.printStackTrace();
-	      }
-	      */
 	      InputStreamReader input= new InputStreamReader(System.in);
 	      BufferedReader br = new BufferedReader(input);
+	      System.out.print("Enter Fileupload choice::");
+	      String choice=br.readLine();
+			 switch(choice.toLowerCase()){
+			 case "image":{
+				 
+			      Publishpost.Browse(driver).click();
+			      
+			      try {
+						Runtime.getRuntime().exec("D:/autoit3/imageupload.exe");
+						Thread.sleep(5000);
+				      } 
+				      catch (Exception e) {
+						e.printStackTrace();
+				      }
+			      break;
+			 }
+			 case "video":{
+				 
+			      Publishpost.Browse(driver).click();
+			      
+			      try {
+						Runtime.getRuntime().exec("D:/autoit3/videoupload.exe");
+						Thread.sleep(5000);
+				      } 
+				      catch (Exception e) {
+						e.printStackTrace();
+				      }
+			      break;
+			 }
+			 }
+			 
+			 
+	    
+	   
+	      
+	    
 	      System.out.print("Enter your Post choice::");
-			 String choice=br.readLine();
+			 choice=br.readLine();
 			 switch(choice.toLowerCase()){
 			 case "publish now":{
 				 Publishpost.Publishnow(driver).click();
@@ -77,3 +103,5 @@ public class Post {
 	         
 	}
 }
+	              
+

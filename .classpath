@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/amit/.m2/repository/org/seleniumhq/selenium/selenium-api/2.48.0/selenium-api-2.48.0.jar">
+	<classpathentry kind="lib" path="C:/Users/anuj/.m2/repository/org/seleniumhq/selenium/selenium-api/2.48.0/selenium-api-2.48.0.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
@@ -11,7 +11,7 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/selenium/selenium_tools/selenium-server-standalone-2.48.2.jar"/>
-	<classpathentry kind="lib" path="D:/selenium/selenium-java-2.48.2/selenium-2.48.2/selenium-java-2.48.2.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium/selenium-java-2.48.2 (1)/selenium-2.48.2/selenium-java-2.48.2.jar"/>
+	<classpathentry kind="lib" path="D:/SeleniumTool/selenium-server-standalone-2.48.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
