@@ -33,7 +33,7 @@ public class ADD_Events {
 	}
 	public static WebElement dateselect (WebDriver driver)
 	{
-		 element=driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']/table/tbody/tr[1]/td[6]/a"));
+		 element=driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']/table/tbody/tr[2]/td[4]/a"));
 		   return element;
 	}
 	public static WebElement Addbtn (WebDriver driver)
@@ -41,10 +41,17 @@ public class ADD_Events {
 		 element=driver.findElement(By.xpath(".//*[@id='submit-event']"));
 		   return element;
 	}
-	
+	/*
+	 * edit event
+	 */
 	public static WebElement edit (WebDriver driver)
 	{
-		 element=driver.findElement(By.xpath(".//*[@id='event-container-fix']/div/div[2]/div[3]/div[5]/div[1]"));
+		 element=driver.findElement(By.xpath(".//*[@id='event-container-fix']/div/div[2]/div[4]/div[6]/div[1]"));
+		   return element;
+	}
+	public static WebElement cancel (WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath("html/body/div[3]/div[2]/button"));
 		   return element;
 	}
 	public static WebElement Editeventbtn (WebDriver driver)
@@ -52,5 +59,34 @@ public class ADD_Events {
 		 element=driver.findElement(By.xpath(".//*[@id='edit-event-link']"));
 		   return element;
 	}
-	
+	public static WebElement Editeventcancel (WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='add-events-modal']/div[2]/div/div[1]/button"));
+		   return element;
+	}
+	public static WebElement EditTitle (WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='event-name']"));
+		   return element;
+	}
+	public static WebElement EditADD (WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='submit-event']"));
+		   return element;
+	}
+	public static WebElement Editdate (WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='event-start-date']"));
+		   return element;
+	}
+	public static WebElement Editdateselect (WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath(".//*[@id='ui-datepicker-div']/table/tbody/tr[2]/td[4]/a"));
+		   return element;
+	}
+	public static WebElement delete (WebDriver driver)
+	{
+		 element=driver.findElement(By.xpath("html/body/div[3]/div[2]/div[2]/div[1]/a"));
+		   return element;
+	}
 }
