@@ -22,7 +22,11 @@ public class Filter_Posts {
 			 Login_ravabe.DoLogin(driver);
 			 driver.navigate().refresh();
 			 Delete_post.Publish(driver).click();
-			 
+			 System.out.print("Would you like to filter(yes/no)::");
+			 InputStreamReader isr=new InputStreamReader(System.in);
+			 BufferedReader brd=new BufferedReader(isr);
+			 String str=brd.readLine();
+			 while(str.equals("yes")){
 			 InputStreamReader input=new InputStreamReader(System.in);
 			 BufferedReader br=new BufferedReader(input);
 			 System.out.print("Enter your filter choice::");
@@ -152,6 +156,13 @@ public class Filter_Posts {
 			 Thread.sleep(5000);
 			 Filter_Post.FilterClear(driver).click();
 			 }
-
+			 System.out.print("Would you like to continue with filter::");
+			 InputStreamReader isrd=new InputStreamReader(System.in);
+			 BufferedReader brdr=new BufferedReader(isrd);
+			 str=brdr.readLine();
+			 if(str.equals("no")){
+				 System.out.println("ok, thanks");
+			 }
+		  }//End while
 		}
 }
