@@ -77,8 +77,63 @@ public class Publishpost {
 		element=driver.findElement(By.xpath("html/body/div[3]/div[2]/div[2]/div/div[3]/div/a"));
 		return element;
 	}
-
 	
+
+	/*
+	 * Draft post edit
+	 */
+	
+	public static WebElement Draftpostlink(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath("html/body/div[3]/div/div[3]/div/table/tbody/tr[15]/td[2]/a"));
+		return element;
+	}
+	public static WebElement Editbtn(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath("html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[2]/div[1]/input"));
+		return element;
+	}
+	public static WebElement note(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath(".//*[@id='summernote']"));
+		return element;
+	}
+	public static WebElement draft_btn(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath(".//*[@id='btn-draft']"));
+		return element;
+	}
+	public static WebElement publishlink(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath("html/body/div[2]/div/div/div/div[3]/div/div[1]/div/div[2]/a"));
+		return element;
+	}
+	
+	
+	/*
+	 * schedule post edit
+	 */
+	public static WebElement schedulepostlink(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath("html/body/div[3]/div/div[3]/div/table/tbody/tr[3]/td[2]/a"));
+		return element;
+	}
+	public static WebElement schedule_editbtn(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath("html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[2]/div[1]/input"));
+		return element;
+	}
+	public static WebElement schedule_note(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath(".//*[@id='summernote']"));
+		return element;
+	}
+
+	public static WebElement schedule_postbtn(WebDriver driver)
+	{
+		element=driver.findElement(By.xpath(".//*[@id='edit-multiple-form']/div/div[2]/div[2]/div[1]/div"));
+		return element;
+	}
 
 }
 

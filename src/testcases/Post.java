@@ -97,6 +97,7 @@ public class Post {
 				 Publishpost.CancelBtn(driver).click();
 				 break;
 			 }
+			
 			 default:{
 				 System.out.println("Invalid choice");
 			 }
